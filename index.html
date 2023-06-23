@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>drag'n drop</title>
+</head>
+
+<body>
+    <header class="header_1">
+        <div class="logo">
+            <img class="logo_img" src="./img/logo.svg" alt="">
+            <span class="logo_text">Trello</span>
+        </div>
+        <button class="create">create</button>
+    </header>
+    <div class="contener">
+        <header></header>
+        <div class="content">
+            <div class="empty">
+                <span>todo</span>
+            </div>
+            <div class="empty">
+                <span>issues</span>
+            </div>
+            <div class="empty">
+                <span>doing</span>
+            </div>
+            <div class="empty">
+                <span>done</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_bg"></div>
+    <div class="modal">
+        <h3>change</h3>
+        <input class="title" type="text" name="task" placeholder="name">
+        <input class="description" type="text" name="task" placeholder="description">
+        <input class="executors" type="text" name="task" placeholder="учасники">
+        <input class="deadline" type="date" name="task" placeholder="deadline">
+        <div class="status_box">
+            <span class="status_text">status</span>
+            <select class="status">
+                <option value="todo">todo</option>
+                <option value="issues">issues</option>
+                <option value="doing">doing</option>
+                <option value="done">done</option>
+            </select>
+        </div>
+        <div class="modal_btn_box">
+            <button class="back">back</button>
+            <button class="accept">save</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
